@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    head
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js")
+        script(src="/javascripts/references.js")
+    body
+        div(ng-app="references" ng-controller="references")
+            h1 Referanslar
+                ul
+                    li(ng-repeat="obj in references")
+                        img(src="/images/{{obj.image}}", alt="{{obj.image}}", width="240px")
+                        br
+                        a(href="{{obj.site}}") {{obj.brand}}

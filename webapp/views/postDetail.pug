@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    head
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js")
+        script(src="/javascripts/postDetail.js")
+    body
+        div(ng-app="postDetail" ng-controller="postDetail")
+            h1 {{post.title}}
+            br
+            p {{post.description}}
+            br
+            br
+            div
+                h3 Yazar : {{post.writer}} - Tarih : {{publishDate}}

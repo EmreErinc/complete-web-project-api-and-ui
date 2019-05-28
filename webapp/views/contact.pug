@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    head
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js")
+        script(src="/javascripts/contact.js")
+    body
+        div.contact(ng-app="contact" ng-controller="contact")
+            div.getContact
+                h1 İletişim
+                    p {{contact.author}}
+                    p {{contact.school}}
+                    p {{contact.address}}
+                    p {{contact.number}}
+
+            div.setContact
+                h1 Bize Ulaşın
+                    form(method='POST' action='/register')
+                        div.form-group
+                            label(for='name') Ad:
+                            input(type='text', placeholder='Adınız' name='name')
+                        div.form-group
+                            label(for='surname') Soyad:
+                            input(type='text', placeholder='Soyadınız' name='surname')
+                        div.form-group
+                            label(for='email') Email:
+                            input(type='email', placeholder='Mail Adresiniz' name='email')
+                        div.form-group
+                            label(for='favoriteBook') Açıklama:
+                            textarea(type='text', placeholder='Açıklamanız', name='description', cols="30", rows="5")
+                        button(type='submit') Gönder

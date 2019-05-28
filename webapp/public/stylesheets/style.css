@@ -1,0 +1,82 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.navbar {
+  margin: 20px;
+  font-size: 20px; 
+  text-align: end;
+  top: 0;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+}
+
+ul > li {
+  background-color: aliceblue;
+  width: 250px;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
+  list-style: none;
+}
+
+p {
+  font-size: 20px;
+  text-indent: 20px;
+}
+
+.post-description {
+  font-size: 15px;
+}
+
+div > h1 {
+  margin-bottom: -15px;
+}
+
+div > h3 {
+  text-align: end;
+}
+
+.contact {
+  display: flex;
+}
+
+.getContact{
+  margin: 50px;
+  width: 50%;
+}
+
+.setContact{
+  margin: 50px;
+  width: 50%;
+}
+
+.form-group{
+  font-size: 20px;
+  text-indent: 20px;
+  padding: 10px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 160px;
+  color: white;
+}
+
+body > img {
+  height: 800px;
+}

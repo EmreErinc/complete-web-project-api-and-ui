@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    head
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js")
+        script(src="/javascripts/posts.js")
+    body
+        div(ng-app="posts" ng-controller="posts")
+            h1 Gönderiler
+                ul
+                    li(ng-repeat="obj in posts")
+                        a(href="/posts/{{obj.id}}") {{obj.title}}
+                        p.post-description {{obj.shortDesctription}}

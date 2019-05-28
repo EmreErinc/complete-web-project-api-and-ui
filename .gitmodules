@@ -1,0 +1,6 @@
+[submodule "webapp"]
+	path = webapp
+	url = git@github.com:EmreErinc/complete-web-project-api-and-ui.git
+[submodule "api"]
+	path = api
+	url = git@github.com:EmreErinc/complete-web-project-api-and-ui.git
